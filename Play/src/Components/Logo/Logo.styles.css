@@ -1,5 +1,7 @@
-.log-img{
+.logo-img{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    left: 5px;
 }

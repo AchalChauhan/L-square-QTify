@@ -1,0 +1,10 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34c94b;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  border-bottom: 1px solid rgba(18, 18, 18, 1);
+}

@@ -1,0 +1,28 @@
+.Search-box {
+  background-color: #34c94b;
+  display: flex;
+}
+.input-box {
+    background-color: white;
+    width: 40vw;
+    height: 6vh;
+    color: black;
+    text-decoration: black;
+    border-radius: 6px 0px 0px 6px;
+    border: 1px solid black;
+}::placeholder {
+    color: black;
+    text-align: center;
+    opacity: 1;
+  }
+
+.search-btn {
+  height: 6vh;
+  width: 4vw;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0% 30% 30% 0%;
+}
+.btn-img {
+  background-color: white;
+}

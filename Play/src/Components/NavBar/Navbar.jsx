@@ -4,7 +4,7 @@ import Logo from '../Logo/Logo.component'
 import SearchBox from '../SearchBox/SearchBox.component'
 import GreenBtn from '../Buttons/GreenBtn.component'
 import './NavBar.style.css'
-const NavbarContainer = () => {
+const Navbar = () => {
 
   const handelFeedBackClick =()=>{
     console.log("Handel FeedBack event")
@@ -21,4 +21,4 @@ const NavbarContainer = () => {
   )
 }
 
-export default NavbarContainer
+export default Navbar

@@ -1,11 +1,11 @@
-import NavbarContainer from './Components/NavBar/NavbarContainer.jsx'
+import Navbar from "./Components/NavBar/Navbar"
 
 function App() {
   
 
   return (
     <>
-      <NavbarContainer/>
+      <Navbar/>
     </>
   )
 }

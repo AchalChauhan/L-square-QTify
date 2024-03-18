@@ -4,7 +4,3 @@
     box-sizing: border-box;
     background-color: #121212;
 }
-
-button:hover{
-    cursor: pointer;
-  }

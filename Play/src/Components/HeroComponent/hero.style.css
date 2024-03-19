@@ -1,0 +1,19 @@
+.hero {
+  position: relative;
+  display: flex;
+  top: 10vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-component {
+  width: 45vw;
+  color: white;
+  font-family: Poppins;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+}

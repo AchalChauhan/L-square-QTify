@@ -1,24 +1,18 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-import Logo from '../Logo/Logo.component'
-import SearchBox from '../SearchBox/SearchBox.component'
-import GreenBtn from '../Buttons/GreenBtn.component'
-import './NavBar.style.css'
-const Navbar = () => {
-
-  const handelFeedBackClick =()=>{
-    console.log("Handel FeedBack event")
-  }
-
+/* eslint-disable react/no-children-prop */
+/* eslint-disable react/prop-types */
+// import React from "react";
+import Button from "../Button/Button";
+import Logo from "../Logo/Logo";
+import styles from "./NavBar.module.css";
+import SearchBar from "../SearchBar/SearchBar";
+const NavBar = ({ data }) => {
   return (
-    <>
-      <nav className="navbar-container">
-        <Logo/>
-        <SearchBox/>
-        <GreenBtn handelFeedBackClick= {handelFeedBackClick} btnText="Give Feedback"/>
-      </nav>
-    </>
-  )
-}
+    <nav className={styles.wrapper}>
+      <Logo />
+      <SearchBar data={data} />
+      <Button children='Give Feedback' />
+    </nav>
+  );
+};
 
-export default Navbar
+export default NavBar;

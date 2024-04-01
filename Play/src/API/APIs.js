@@ -1,33 +1,22 @@
 import axios from "axios";
 
-export const BACKEND_ENPOINT = "https://qtify-backend-labs.crio.do";
+const QTIFY_BACKEND_POINT = "https://qtify-backend-labs.crio.do";
 
-export const fetchTopAlbums = async () => {
+async function fetchApi(path) {
   try {
-    const response = await axios.get(`${BACKEND_ENPOINT}/albums/top`);
+    const response = await axios.get(QTIFY_BACKEND_POINT + path);
     return response.data;
   } catch (error) {
-    console.log(error);
-    return null;
+    // console.error(error);
+    console.log("API Failure");
   }
-};
+}
 
-export const fetchNewAlbums = async () => {
-  try {
-    const res = await axios.get(`${BACKEND_ENPOINT}/albums/new`);
-    return res.data;
-  } catch (error) {
-    console.log(error);
-    return null;
-  }
-};
+export default fetchApi;
 
-export const fetchSongs = async () => {
-  try {
-    const res = await axios.get(`${BACKEND_ENPOINT}/songs`);
-    return res.data;
-  } catch (error) {
-    console.log(error);
-    return null;
-  }
-};
+// https://qtify-backend-labs.crio.do/albums/top
+// https://qtify-backend-labs.crio.do/albums/new
+// https://qtify-backend-labs.crio.do/album/:slug
+// https://qtify-backend-labs.crio.do/songs
+// https://qtify-backend-labs.crio.do/faq
+// https://qtify-backend-labs.crio.do/genres

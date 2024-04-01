@@ -8,7 +8,7 @@ import SearchBar from "../SearchBar/SearchBar";
 const NavBar = ({ data }) => {
   return (
     <nav className={styles.wrapper}>
-      <Logo className={styles.Logo} />
+      <Logo />
       <SearchBar data={data} />
       <Button children='Give Feedback' />
     </nav>
